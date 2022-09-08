@@ -4,17 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src = "/src/p5.js"></script>
     <script src="script.js" defer></script>
-    <link rel = "stylesheet" href = "/app/styles.css">
+    <script src="/game/sketch.js" defer></script>
+    <script src="/game/backdrop.js" defer></script>
+    <script src="/game/main.js"defer></script>
+    <script src="/game/ball.js"defer></script>
+    <script src="/game/paddle.js"defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/app/styles.css" />
     <title>RESUME</title>
   </head>
-  <body
-    style="
-      background-color: #32373B;">
-    <div class="flex w-20 h-10 m-auto p-4 text-slate-50 text-center">
-      <a class="font-semibold text-2xl p-3">HOME</a>
-      <a class="font-semibold text-2xl p-3">PROJECTS</a>
+  <body class="bg-primary">
+    <div class="flex w-60 h-10 m-auto mt-5 text-slate-50 text-center select-none mb-56">
+      <a class="font-semibold text-3xl mr-10 hover:text-secondary">HOME</a>
+      <a class="font-semibold text-3xl hover:text-secondary">PROJECTS</a>
     </div>
-    <div class="fixed w-36 h-2 right-0 text-slate-50">Contact me</div>
+    <div
+      class="fixed w-auto h-auto right-5 top-5 text-slate-50 font-Roboto select-none hover:text-secondary"
+    >
+      Contact me
+    </div>
   </body>
 </html>
