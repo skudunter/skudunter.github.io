@@ -1,9 +1,5 @@
-let ball, p1, p2, retroFont;
+let ball, p1, p2;
 let go = false;
-
-function preload() {
-	retroFont = loadFont('ARCADECLASSIC.TTF');
-}
 
 function setup() {
   
