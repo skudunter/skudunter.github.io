@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors:{
       primary:"#32373B",
-      secondary:"#FF0095"
+      secondary:"#04F06A"
       },
       fontFamily:{
       "Roboto":["'Roboto'","serif"]

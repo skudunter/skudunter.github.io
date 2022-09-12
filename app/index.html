@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/p5.js"></script>
-    <!-- <script src="script.js" defer></script> -->
-    <script src="/game/sketch.js"></script>
-    <script src="/game/backdrop.js"></script>
-    <script src="/game/main.js"></script>
-    <script src="/game/ball.js"></script>
-    <script src="/game/paddle.js"></script>
+    <script src="script.js" defer></script>
+    <script src="/game/sketch.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
@@ -20,15 +15,17 @@
   </head>
   <body class="bg-primary">
     <div
-      class="flex w-60 h-10 m-auto mt-5 text-slate-50 text-center select-none mb-56"
+      class="flex w-72 h-10 m-auto mt-5 text-slate-50 text-center select-none mb-5"
     >
       <a class="font-semibold text-3xl mr-10 hover:text-secondary">HOME</a>
-      <a class="font-semibold text-3xl hover:text-secondary">PROJECTS</a>
+      <a class="font-semibold text-3xl hover:text-secondary mr-10">PROJECTS</a>
+      <a class="font-semibold text-3xl hover:text-secondary">ABOUT</a>
+      <div
+        class="fixed w-auto h-auto right-5 top-7 text-slate-50 font-Roboto select-none hover:text-secondary"
+      >
+        Contact me
+      </div>
     </div>
-    <div
-      class="fixed w-auto h-auto right-5 top-5 text-slate-50 font-Roboto select-none hover:text-secondary"
-    >
-      Contact me
-    </div>
+    <canvas id="gameCanvas" class="fixed w-full h-full></canvas>
   </body>
 </html>
