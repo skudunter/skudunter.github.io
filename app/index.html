@@ -15,17 +15,33 @@
   </head>
   <body class="bg-primary">
     <div
-      class="flex w-72 h-10 m-auto mt-5 text-slate-50 text-center select-none mb-5"
+      class="flex w-3/12 h-10 m-auto mt-5 text-slate-50 text-center select-none mb-5"
     >
-      <a class="font-semibold text-3xl mr-10 hover:text-secondary">HOME</a>
-      <a class="font-semibold text-3xl hover:text-secondary mr-10">PROJECTS</a>
-      <a class="font-semibold text-3xl hover:text-secondary">ABOUT</a>
-      <div
-        class="fixed w-auto h-auto right-5 top-7 text-slate-50 font-Roboto select-none hover:text-secondary"
+      <a
+        class="font-semibold text-4xl mr-10 underline decoration-current decoration-4 hover:text-secondary"
+        >HOME</a
+      >
+      <a
+        href="/pages/projects.html"
+        class="font-semibold text-4xl hover:text-secondary mr-10"
+        >PROJECTS</a
+      >
+      <a
+        href="/pages/projects.html"
+        class="font-semibold text-4xl hover:text-secondary"
+        >ABOUT</a
+      >
+      <a
+      href = "mailto:dwgcptwork@gmail.com" class="fixed w-auto h-auto right-5 top-7 text-slate-50 font-Roboto select-none hover:text-secondary"
       >
         Contact me
-      </div>
+      </a>
     </div>
-    <canvas id="gameCanvas" class="fixed w-full h-full></canvas>
+    <canvas
+      id="gameCanvas"
+      width="2500"
+      height="1160"
+      class="fixed w-full h-auto"
+    ></canvas>
   </body>
 </html>
