@@ -19,11 +19,11 @@ class ball {
     this.x = x;
     this.y = y;
     this.r = 30;
-    if (Math.random() >= 0.5){
-		this.vx = -8;
-    }else{
-		this.vx = 8;
-	}
+    if (Math.random() >= 0.5) {
+      this.vx = -8;
+    } else {
+      this.vx = 8;
+    }
     this.vy = 5 * Math.random() * 2 - 1;
   }
   show() {
@@ -69,8 +69,10 @@ function playGame() {
   p1.y = bll.y - 90;
   p2.y = bll.y - 90;
   for (let i = 0; i < canvas.height / 40; i++) {
-    ctx.fillRect(canvas.width / 2-10, i * 40, 10, 30);
+    ctx.fillRect(canvas.width / 2 - 10, i * 40, 10, 30);
   }
+  ctx.font = "70px Roboto";
+  ctx.fillText("Skudunter LLC", canvas.width / 2 - 200, canvas.height / 2);
   requestAnimationFrame(playGame);
 }
 

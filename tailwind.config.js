@@ -8,7 +8,8 @@ module.exports = {
       secondary:"#04F06A"
       },
       fontFamily:{
-      "Roboto":["'Roboto'","serif"]
+      "Roboto":["'Roboto'","serif"],
+      "Press Play 2P":["'Press Play 2P'","cursive"]
       }
     },
   },
