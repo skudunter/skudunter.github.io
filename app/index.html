@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/app/script.js" defer></script>
     <script src="/app/game/sketch.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
@@ -19,29 +18,46 @@
   </head>
   <body class="bg-primary">
     <div
-      class="flex w-3/12 h-10 m-auto mt-5 text-slate-50 text-center select-none mb-5"
+      class="w-full pt-5 pb-5 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5"
     >
       <a
-        class="font-semibold font-Roboto text-4xl mr-10 underline decoration-current decoration-4 hover:text-secondary"
+        href="/app/index.html"
+        class="font-semibold text-4xl underline decoration-4 hover:text-secondary"
         >HOME</a
       >
       <a
-        href="/app/"
-        class="font-semibold text-4xl font-Roboto hover:text-secondary mr-10"
+        href="/app/pages/projects.html"
+        class="font-semibold text-4xl  hover:text-secondary"
         >PROJECTS</a
       >
       <a
         href="/app/pages/about.html"
-        class="font-semibold text-4xl font-Roboto hover:text-secondary"
+        class="font-semibold text-4xl hover:text-secondary"
         >ABOUT</a
       >
       <a
         href="mailto:dwgcptwork@gmail.com"
-        class="fixed w-auto h-auto right-5 top-7 text-slate-50 font-Roboto select-none hover:text-secondary"
+        class="fixed right-5 top-7 hover:text-secondary"
       >
         Contact me
       </a>
     </div>
+    <span class="fixed -bottom-10 z-10 right-6 flex text-center space-x-0">
+      <a href="./pages/coming.html" class="w-32 h-32"
+        ><img alt="Discord" src="./images/discord.svg"
+      /></a>
+      <a href="./pages/coming.html" class="w-32 h-32"
+        ><img alt="youtube" src="./images/youtube.svg"
+      /></a>
+      <a href="https://github.com/skudunter" class="w-32 h-32"
+        ><img alt="github" src="./images/github.svg"
+      /></a>
+      <a
+        href="https://www.fiverr.com/users/srscoder"
+        class="w-40 h-32 bottom-8 relative"
+        ><img alt="fiverr" src="./images/fiverr.png"
+      /></a>
+    </span>
     <canvas
       id="gameCanvas"
       width="2500"

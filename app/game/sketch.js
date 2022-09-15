@@ -10,7 +10,7 @@ class paddle {
     this.height = 180;
   }
   show() {
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#f8fafc";
     ctx.fillRect(this.x, this.y, this.width, this.height);
   }
 }
@@ -27,7 +27,7 @@ class ball {
     this.vy = 5 * Math.random() * 2 - 1;
   }
   show() {
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#f8fafc";
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
     ctx.fill();
@@ -70,9 +70,9 @@ function playGame() {
   p2.y = bll.y - 90;
   for (let i = 0; i < canvas.height / 40; i++) {
     ctx.fillRect(canvas.width / 2 - 10, i * 40, 10, 30);
-  }
-  ctx.font = "70px Roboto";
-  ctx.fillText("Skudunter LLC", canvas.width / 2 - 200, canvas.height / 2);
+  }  
+  ctx.font = "120px Arial";
+  ctx.fillText("Skudunter LLC", canvas.width / 2 - 345, canvas.height / 2);
   requestAnimationFrame(playGame);
 }
 
