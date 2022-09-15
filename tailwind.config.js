@@ -20,7 +20,7 @@ module.exports = {
         "aboutBackground":"url('/app/images/background.png')"
       },
       spacing:{
-        '4/10':"40%"
+        '4/10':"100%"
       }
     }
   },
