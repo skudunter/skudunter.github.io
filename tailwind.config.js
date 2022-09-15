@@ -10,12 +10,17 @@ module.exports = {
       },
       fontFamily:{
       "Roboto":["'Roboto'","serif"],
-      "Press Play 2P":["'Press Play 2P'","cursive"]
       },
       keyframes:{
       fadein:{
         "0%, 100%":{opacity:1}
       }
+      },
+      backgroundImage:{
+        "aboutBackground":"url('/app/images/background.png')"
+      },
+      spacing:{
+        '4/10':"40%"
       }
     }
   },

@@ -72,7 +72,7 @@ function playGame() {
     ctx.fillRect(canvas.width / 2 - 10, i * 40, 10, 30);
   }  
   ctx.font = "120px Arial";
-  ctx.fillText("Skudunter LLC", canvas.width / 2 - 345, canvas.height / 2);
+  ctx.fillText("Skudunter LLC", canvas.width / 2 - 356, canvas.height / 2);
   requestAnimationFrame(playGame);
 }
 
