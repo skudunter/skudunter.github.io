@@ -29,8 +29,10 @@ r = Math.random() * 255;
 g = Math.random() * 255;
 b = Math.random() * 255;
 
-canvas.width = window.innerWidth-20;
-canvas.height = window.innerHeight+130;
+canvas.width = window.innerWidth - 20;
+canvas.height = window.innerHeight + 130;
+
+for (let i = 0; i < 2; i++) {startSimulation()}
 
 function startSimulation() {
   if (r > 255) {
