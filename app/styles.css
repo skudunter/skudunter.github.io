@@ -607,6 +607,10 @@ video {
   left: -8rem;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -638,6 +642,14 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-52 {
+  margin-left: 13rem;
 }
 
 .inline {
@@ -706,6 +718,22 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-2xl {
