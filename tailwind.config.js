@@ -1,28 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}","./app/pages/*.html","./app/pages/projects/*.html"],
+  content: [
+    "./src/**/*.{html,js}",
+    "./app/pages/*.html",
+    "./app/pages/projects/*.html",
+  ],
   theme: {
     extend: {
-      colors:{
-      primary:"#32373B",
-      secondary:"#04F06A",
-      tersiary:"#ABEBD2"
+      colors: {
+        primary: "#32373B",
+        secondary: "#04F06A",
+        tersiary: "#ABEBD2",
       },
-      fontFamily:{
-      "Roboto":["'Roboto'","serif"],
+      fontFamily: {
+        Roboto: ["'Roboto'", "serif"],
       },
-      keyframes:{
-      fadein:{
-        "0%, 100%":{opacity:1}
-      }
+      keyframes: {
+        fadein: {
+          "0%, 100%": { opacity: "1" },
+        },
+        animation: {
+          fadein:'fadein 1s ease-in-out infinite'
+        },
       },
-      backgroundImage:{
-        "aboutBackground":"url('/app/images/background.png')"
+      backgroundImage: {
+        aboutBackground: "url('/app/images/background.png')",
       },
-      spacing:{
-        '17%':"17%"
-      }
-    }
+      spacing: {
+        "17%": "17%",
+        "40%": "37%",
+      },
+    },
   },
   plugins: [],
-}
+};
