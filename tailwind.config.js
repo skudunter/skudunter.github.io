@@ -17,11 +17,13 @@ module.exports = {
       },
       keyframes: {
         fadein: {
-          "0%, 100%": { opacity: "1" },
-        },
-        animation: {
-          fadein:'fadein 1s ease-in-out infinite'
-        },
+          "0%": { opacity: "0.7" },
+          "100%": { opacity: "1" },
+        }
+      },
+      animation: {
+        fadein:'fadein 1s ease forwards',
+        fadeout:'fadein 1s ease forwards reverse'
       },
       backgroundImage: {
         aboutBackground: "url('/app/images/background.png')",
