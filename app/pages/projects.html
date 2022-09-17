@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class = 'overflow-hidden'>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,52 +18,52 @@
   </head>
   <body class="bg-primary">
     <div
-    class="w-full py-2 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5 sm:py-5"
-  >
-    <a
-    href="/index.html"
-      class="font-semibold text-2xl transition ease-in-out duration-500 hover:text-secondary sm:text-4xl"
-      >HOME</a
+      class="w-full py-2 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5 sm:py-5"
     >
-    <a
-      href="/app/pages/projects.html"
-      class="font-semibold text-2xl sm:text-4xl underline decoration-4 hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-      >PROJECTS</a
-    >
-    <a
-      href="/app/pages/about.html"
-      class="font-semibold text-2xl sm:text-4xl hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-      >ABOUT</a
-    >
-    <a
-      href="mailto:dwgcptwork@gmail.com"
-      class=" right-5 transition ease-in-out duration-500 hover:scale-110 hover:text-secondary top-4 text-xs sm:top-7 sm:text-sm sm:fixed"
-    >
-      Contact me
-    </a>
-  </div>
-    <div
-      class="fixed inline-block mx-auto mt-10 w-8/12 h-5/6 py-4 bg-tersiary rounded-2xl right-17%"
-    >
-      <button
-        class="relative text-9xl opacity-50 font-bold float-right top-40% -right-32 text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
-        id="backwardButton"
-        onclick="backward()"
+      <a
+        href="/index.html"
+        class="font-semibold text-2xl transition ease-in-out duration-500 hover:text-secondary sm:text-4xl"
+        >HOME</a
       >
-        >
-      </button>
-      <button
-        class="relative text-9xl font-bold float-left opacity-50 -left-32 top-40% text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
-        id="forwardButton"
-        onclick="forward()"
+      <a
+        href="/app/pages/projects.html"
+        class="font-semibold text-2xl sm:text-4xl underline decoration-4 hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
+        >PROJECTS</a
       >
-        <
-      </button>
-      <iframe
-        id="display"
-        class="mx-auto w-9/12 h-full overflow-hidden transition ease-in-out duration-1000"
-        src="/app/pages/projects/momentum.html"
-      ></iframe>
+      <a
+        href="/app/pages/about.html"
+        class="font-semibold text-2xl sm:text-4xl hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
+        >ABOUT</a
+      >
+      <a
+        href="mailto:dwgcptwork@gmail.com"
+        class="right-5 transition ease-in-out duration-500 hover:scale-110 hover:text-secondary top-4 text-xs sm:top-7 sm:text-sm sm:fixed"
+      >
+        Contact me
+      </a>
     </div>
+      <div
+        class="absolute inline mx-auto w-8/12 h-5/6 py-4 bg-tersiary rounded-2xl right-17%"
+      >
+        <button
+          class="relative text-9xl opacity-50 font-bold float-right top-40% -right-32 text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+          id="backwardButton"
+          onclick="backward()"
+        >
+          >
+        </button>
+        <button
+          class="relative text-9xl font-bold float-left opacity-50 -left-32 top-40% text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+          id="forwardButton"
+          onclick="forward()"
+        >
+          <
+        </button>
+        <iframe
+          id="display"
+          class="relative mx-auto w-8/12 h-full transition ease-in-out duration-1000 "
+          src="/app/pages/projects/momentum.html"
+        ></iframe>
+      </div>
   </body>
 </html>
