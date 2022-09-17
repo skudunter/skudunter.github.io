@@ -1,7 +1,17 @@
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
+const body = document.body;
 ctx.fillStyle = "#ABEBD2";
+canvas.width = window.outerWidth;
+canvas.height = window.innerHeight - body.scrollHeight;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
+addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight - body.scrollHeight;
+  p1 = new paddle(10, canvas.height / 2 - 120);
+  p2 = new paddle(canvas.width - 60, canvas.height / 2 - 120);
+  bll = new ball(canvas.width / 2 + 10, canvas.height / 2 - 50);
+});
 class paddle {
   constructor(x, y) {
     this.y = y;
@@ -70,9 +80,9 @@ function playGame() {
   p2.y = bll.y - 90;
   for (let i = 0; i < canvas.height / 40; i++) {
     ctx.fillRect(canvas.width / 2 - 10, i * 40, 10, 30);
-  }  
+  }
   ctx.font = "120px Arial";
-  ctx.fillText("Skudunter LLC", canvas.width / 2 -570, canvas.height / 2);
+  ctx.fillText("Skudunter LLC", canvas.width / 2 - 570, canvas.height / 2);
   requestAnimationFrame(playGame);
 }
 

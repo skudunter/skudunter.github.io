@@ -1,5 +1,7 @@
 let canvas = document.getElementById("aboutCanvas");
 let ctx = canvas.getContext("2d");
+const body = document.getElementById("body");
+const html = document.documentElement;
 let startX;
 let startY;
 let endX;
@@ -29,10 +31,25 @@ r = Math.random() * 255;
 g = Math.random() * 255;
 b = Math.random() * 255;
 
-canvas.width = window.innerWidth - 20;
-canvas.height = window.innerHeight + 130;
+var height = Math.max(
+  body.scrollHeight,
+  body.offsetHeight,
+  html.clientHeight,
+  html.scrollHeight,
+  html.offsetHeight
+);
 
-for (let i = 0; i < 2; i++) {startSimulation()}
+canvas.width = window.innerWidth-20;
+canvas.height = height;
+
+addEventListener("resize", () => {
+  canvas.width = window.innerWidth-20;
+  canvas.height = height;
+});
+
+for (let i = 0; i < 2; i++) {
+  startSimulation();
+}
 
 function startSimulation() {
   if (r > 255) {
