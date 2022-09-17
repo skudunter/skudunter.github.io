@@ -94,7 +94,7 @@ function playGame() {
   p1.y = bll.y - height / 2;
   p2.y = bll.y - height / 2;
   for (let i = 0; i < canvas.height / 40; i++) {
-    ctx.fillRect(canvas.width / 2 - 10, i * 40, 10, 30);
+    ctx.fillRect(canvas.width / 2 - 10, i * 40,canvas.width/300, 30);
   }
   ctx.font = (canvas.width/18 + "px Arial");
   ctx.textAlign = "center";

@@ -15,33 +15,39 @@
     />
     <link rel="stylesheet" href="/app/styles.css" />
   </head>
-  <script src = "/app/scripts/about.js" defer></script>
-  <body id = 'body'class="bg-primary overflow-x-hidden">
+  <script src="/app/scripts/about.js" defer></script>
+  <body id="body" class="bg-primary overflow-x-hidden">
     <div
-      class="w-full pt-5 pb-5 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5"
+      class="w-full py-2 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5 sm:py-5"
     >
       <a
         href="/index.html"
-        class="font-semibold text-4xl ml-32 hover:text-secondary transition ease-in-out duration-500  hover:scale-110 "
+        class="font-semibold text-2xl transition ease-in-out duration-500 hover:text-secondary sm:text-4xl"
         >HOME</a
       >
       <a
         href="/app/pages/projects.html"
-        class="font-semibold text-4xl hover:text-secondary transition ease-in-out duration-500  hover:scale-110 "
+        class="font-semibold text-2xl sm:text-4xl hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
         >PROJECTS</a
       >
       <a
-        class="font-semibold text-4xl underline decoration-4 hover:text-secondary transition ease-in-out duration-500  hover:scale-110 "
+        href="/app/pages/about.html"
+        class="font-semibold text-2xl sm:text-4xl underline decoration-4 hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
         >ABOUT</a
       >
       <a
         href="mailto:dwgcptwork@gmail.com"
-        class="relative float-right right-5 top-2 hover:text-secondary transition ease-in-out duration-500  hover:scale-110 "
+        class="right-5 transition ease-in-out duration-500 hover:scale-110 hover:text-secondary top-4 text-xs sm:top-7 sm:text-sm sm:fixed"
       >
         Contact me
       </a>
     </div>
-    <canvas id = 'aboutCanvas' class = 'absolute -z-10' width = 700 height = 400></canvas>
+    <canvas
+      id="aboutCanvas"
+      class="absolute -z-10"
+      width="700"
+      height="400"
+    ></canvas>
     <div
       class="mx-auto mt-8 text-xl w-8/12 h-auto font-Roboto text-center py-4 bg-tersiary bg-opacity-70 rounded-2xl text-slate-50"
     >
