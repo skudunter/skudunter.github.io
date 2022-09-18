@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class = 'overflow-hidden'>
+<html lang="en" class="overflow-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,28 +42,26 @@
         Contact me
       </a>
     </div>
-      <div
-        class="absolute block mx-auto w-8/12 h-5/6 py-4  bg-tersiary rounded-2xl right-17%"
+    <div class = 'fixed inline w-full'>
+      <button
+        class="relative text-9xl opacity-50 font-bold float-right top-1/2 text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+        id="backwardButton"
+        onclick="backward()"
       >
-        <button
-          class="relative text-9xl opacity-50 font-bold float-right top-40% -right-32 text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
-          id="backwardButton"
-          onclick="backward()"
         >
-          >
-        </button>
-        <button
-          class="relative text-9xl font-bold float-left opacity-50 -left-32 top-40% text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
-          id="forwardButton"
-          onclick="forward()"
-        >
-          <
-        </button>
-        <iframe
-          id="display"
-          class="relative block top-0 mx-auto w-8/12 h-full overflow-auto transition ease-in-out duration-1000 "
-          src="/app/pages/projects/momentum.html"
-        ></iframe>
-      </div>
+      </button>
+      <button
+        class="relative text-9xl font-bold float-left opacity-50 top-1/2 text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+        id="forwardButton"
+        onclick="forward()"
+      >
+        <
+      </button>
+    </div>
+    <iframe
+      id="display"
+      class="absolute m-auto inline h-5/6 w-4/6 p-10 right-17% bg-tersiary rounded-3xl transition ease-in-out duration-1000"
+      src="/app/pages/projects/momentum.html"
+    ></iframe>
   </body>
 </html>
