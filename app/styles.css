@@ -680,6 +680,18 @@ video {
   height: 100%;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -698,6 +710,18 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .scale-100 {
@@ -993,5 +1017,13 @@ video {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:scale-150 {
+    --tw-scale-x: 1.5;
+    --tw-scale-y: 1.5;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
