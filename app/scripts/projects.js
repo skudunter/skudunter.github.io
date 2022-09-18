@@ -5,8 +5,8 @@ const projects = [
 const display = document.getElementById("display");
 let index = 0;
 function forward() {
-  // display.className =
-  //   "mx-auto w-9/12 h-full overflow-hidden transition-none ease-in-out duration-1000";
+   display.className =
+     "absolute m-auto h-full w-4/6 p-8 right-17% bg-center bg-tersiary rounded-3xl transition ease-in-out duration-1000";
   display.style.opacity = 0;
   if (index + 1 < projects.length) {
     index++;
@@ -15,15 +15,15 @@ function forward() {
   }
   display.setAttribute("src", projects[index]);
   setInterval(() => {
-    // display.className =
-    //   "mx-auto w-9/12 h-full overflow-hidden transition ease-in-out duration-1000";
+    display.className =
+      "absolute m-auto inline h-full w-4/6 p-8 right-17% bg-center bg-tersiary rounded-3xl transition ease-in-out duration-1000";
     display.style.opacity = 1;
   },0);
 }
 
 function backward() {
-  // display.className =
-  //   "mx-auto w-9/12 h-full overflow-hidden transition-none ease-in-out duration-1000";
+  display.className =
+    "absolute m-auto  h-full w-4/6 p-8 right-17% bg-center bg-tersiary rounded-3xl transition ease-in-out duration-1000";
   display.style.opacity = 0;
   if (index > 0) {
     index--;
@@ -32,8 +32,8 @@ function backward() {
   }
   display.setAttribute("src", projects[index]);
   setInterval(() => {
-    // display.className =
-    //   "mx-auto w-9/12 h-full overflow-hidden transition ease-in-out duration-1000";
+    display.className =
+      "absolute m-auto inline h-full w-4/6 p-8 right-17% bg-center bg-tersiary rounded-3xl transition ease-in-out duration-1000";
     display.style.opacity = 1;
   },0);
 }
