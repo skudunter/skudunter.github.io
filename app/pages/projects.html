@@ -42,26 +42,27 @@
         Contact me
       </a>
     </div>
-    <div class = 'fixed inline w-full'>
+    <div class = 'fixed inline h-5/6 w-full'>
       <button
-        class="relative text-9xl opacity-50 font-bold float-right top-1/2 text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+        class="relative block right-0 text-center text-8xl md:right-10 md:text-9xl lg:right-20 opacity-50 font-bold float-right top-40%  text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
         id="backwardButton"
         onclick="backward()"
       >
         >
       </button>
       <button
-        class="relative text-9xl font-bold float-left opacity-50 top-1/2 text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+        class="text-8xl block left-0 text-center relative md:left-10 md:text-9xl lg:left-20 font-bold float-left opacity-50  top-40% text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
         id="forwardButton"
         onclick="forward()"
       >
         <
       </button>
-    </div>
-    <iframe
+      <iframe
       id="display"
-      class="absolute m-auto inline h-5/6 w-4/6 p-10 right-17% bg-tersiary rounded-3xl transition ease-in-out duration-1000"
+      class="absolute m-auto inline h-full w-4/6 p-8 right-17% bg-center bg-tersiary rounded-3xl transition ease-in-out duration-1000"
       src="/app/pages/projects/momentum.html"
     ></iframe>
+    </div>
+
   </body>
 </html>

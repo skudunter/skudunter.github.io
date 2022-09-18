@@ -32,6 +32,7 @@ module.exports = {
       spacing: {
         "17%": "17%",
         "40%": "37%",
+        "arrows":"7%"
       },
       screens:{
         'xs':'390px'
