@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 const body = document.body;
 let width = window.innerWidth / 40;
 let height = window.innerHeight / 5;
-let radius = window.innerHeight / 9 / 6 + window.innerWidth / 16 / 6;
+let radius = (window.innerHeight + window.innerWidth)/100;
 ctx.fillStyle = "#ABEBD2";
 
 canvas.width = window.outerWidth;
@@ -13,18 +13,19 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight - body.scrollHeight;
+   radius = (window.innerHeight + window.innerWidth)/100;
 
   p1 = new paddle(10, canvas.height / 2 - height / 2);
   p2 = new paddle(canvas.width - width - 10, canvas.height / 2 - height / 2);
   bll = new ball(canvas.width / 2, canvas.height / 2);
 
   width = canvas.width / 40;
-  if (width < 40) {
-    width = 40;
+  if (width < 20) {
+    width = 20;
   }
   height = canvas.height / 5;
-  if (height < 100) {
-    height = 120;
+  if (height < 50) {
+    height = 50;
   }
 });
 
@@ -94,7 +95,7 @@ function playGame() {
   p1.y = bll.y - height / 2;
   p2.y = bll.y - height / 2;
   for (let i = 0; i < canvas.height / 40; i++) {
-    ctx.fillRect(canvas.width / 2 - 10, i * 40,canvas.width/300, 30);
+    ctx.fillRect(canvas.width / 2-3, i * 40,canvas.width/300, 30);
   }
   ctx.font = (canvas.width/18 + "px Arial");
   ctx.textAlign = "center";
