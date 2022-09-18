@@ -5,7 +5,6 @@ const projects = [
 const display = document.getElementById("display");
 let index = 0;
 function forward() {
-  display.style.opacity = 0;
   if (index + 1 < projects.length) {
     index++;
   } else {
