@@ -33,6 +33,9 @@ module.exports = {
         "17%": "17%",
         "40%": "37%",
       },
+      screens:{
+        'xs':'390px'
+      }
     },
   },
   plugins: [],
