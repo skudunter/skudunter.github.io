@@ -1,97 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" class = 'touch-none'>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/app/styles.css" />
-  </head>
-  <script src="/app/scripts/about.js" defer></script>
-  <body id="body" class="bg-primary overflow-x-hidden">
-    <div
-      class="w-full py-2 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5 sm:py-5"
-    >
-      <a
-        href="/index.html"
-        class="font-semibold text-2xl transition ease-in-out duration-500 hover:text-secondary sm:text-4xl"
-        >HOME</a
-      >
-      <a
-        href="/app/pages/projects.html"
-        class="font-semibold text-2xl sm:text-4xl hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-        >PROJECTS</a
-      >
-      <a
-        href="/app/pages/about.html"
-        class="font-semibold text-2xl sm:text-4xl underline decoration-4 hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-        >ABOUT</a
-      >
-      <a
-        href="mailto:dwgcptwork@gmail.com"
-        class="right-5 transition ease-in-out duration-500 hover:scale-110 hover:text-secondary top-4 text-xs sm:top-7 sm:text-sm sm:fixed"
-      >
+<html lang="en" class='touch-none'>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='icon' href='../images/pfp.ico'>
+  <meta name="theme-color" content="#fafafc">
+  <meta name="description" content="Come chek out my website with all of my projects on">
+  <title>My Personal Website-About Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/app/styles.css" />
+</head>
+<script src="/app/scripts/about.js" defer></script>
+
+<body id="body" class="bg-primary overflow-x-hidden">
+  <main>
+    <header
+      class="py-2 bg-primary text-white text-center select-none space-x-5 sm:py-5 font-semibold text-2xl sm:text-4xl">
+      <a href = '/index.html'class=" hover:text-secondary ease-in-out duration-500">HOME</a>
+      <a href="/app/pages/projects.html" class=" hover:text-secondary ease-in-out duration-500">PROJECTS</a>
+      <a href="/app/pages/about.html" class=" hover:text-secondary underline decoration-4 ease-in-out duration-500">ABOUT</a>
+      <a href="mailto:dwgcptwork@gmail.com"
+        class="bg-tersiary text-primary p-2 rounded-md font-bold right-5 ease-in-out duration-500 hover:scale-110  top-4 text-xs sm:top-7 sm:text-sm sm:fixed">
         Contact me
       </a>
-    </div>
-    <canvas
-      id="aboutCanvas"
-      class="absolute -z-10"
-      width="1"
-      height="1"
-    ></canvas>
-    <div
-      class="mx-auto mt-8 text-xl w-8/12 h-auto font-Roboto text-center py-4 bg-tersiary bg-opacity-70 rounded-2xl text-slate-50"
-    >
-      <h1 class="font-semibold text-5xl">Hey there!</h1>
-      <br />
-      <p class="text-2x font-semibold">
-        Im Daniel<br />I am super passionate about game/web development and all
-        sorts of projects.<br />I am a skilled programmer with experience in 5
-        languages and master of dynamic animations with p5.js<br />
-        I am a quick learner and a team worker that gets the job done.<br />
-        I can easily capitalize on low hanging fruit and quickly maximize timely
-        deliveries for real time projects.
+    </header>
+    <article>
+      <canvas id="aboutCanvas" class="absolute -z-10" width="1" height="1"></canvas>
+      <div
+        class="mx-auto mt-8 text-xl w-8/12 h-auto font-Roboto text-center py-4 bg-tersiary bg-opacity-70 rounded-2xl text-slate-50">
+        <h1 class="font-semibold text-5xl">Hey there!</h1>
         <br />
+        <p class="text-2x font-semibold">
+          I am Daniel<br />I am super passionate about game/web development and all
+          sorts of projects.<br />I am a skilled programmer with experience in 5
+          languages and master of dynamic animations with p5.js<br />
+          I am a quick learner and a team worker that gets the job done.<br />
+          I can easily capitalize on low hanging fruit and quickly maximize timely
+          deliveries for real time projects.
+          <br />
+          <br />
+          “Any fool can write code that a computer can understand. Good
+          programmers write code that humans can understand."
+        </p>
+      </div>
+      <div
+        class="z-10 mx-auto mt-8 text-xl w-8/12 h-auto font-Roboto text-center py-4 bg-gradient-to-b from-tersiary rounded-2xl text-slate-50">
         <br />
-        “Any fool can write code that a computer can understand. Good
-        programmers write code that humans can understand."
-      </p>
-    </div>
-    <div
-      class="z-10 mx-auto mt-8 text-xl w-8/12 h-auto font-Roboto text-center py-4 bg-gradient-to-b from-tersiary rounded-2xl text-slate-50"
-    >
-      <br />
-      <h1 class="text-5xl font-semibold">My Skills:</h1>
-      <br />
-      <ul>
-        <li class="text-3xl">JavaScript</li>
-        <li>node-js</li>
-        <li>p5.js</li>
+        <h1 class="text-5xl font-semibold">My Skills:</h1>
         <br />
-        <li class="text-3xl">C#</li>
-        <li>.Net</li>
-        <br />
-        <li class="text-3xl">Unity</li>
-        <br />
-        <li class="text-3xl">SQL</li>
-        <br />
-        <li class="text-3xl">CSS</li>
-        <li>tailwind</li>
-        <br />
-        <li class="text-3xl">HTML</li>
-        <br />
-        <li class="text-3xl">Pascal</li>
-        <li>Delphi</li>
-      </ul>
-    </div>
-  </body>
+        <ul>
+          <li class="text-3xl">JavaScript</li>
+          <li>node-js</li>
+          <li>p5.js</li>
+          <br />
+          <li class="text-3xl">C#</li>
+          <li>.Net</li>
+          <br />
+          <li class="text-3xl">Unity</li>
+          <br />
+          <li class="text-3xl">SQL</li>
+          <br />
+          <li class="text-3xl">CSS</li>
+          <li>tailwind</li>
+          <br />
+          <li class="text-3xl">HTML</li>
+          <br />
+          <li class="text-3xl">Pascal</li>
+          <li>Delphi</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+</body>
+
 </html>

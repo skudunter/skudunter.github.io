@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" class="overflow-hidden">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/app/styles.css" />
-    <script src="/app/scripts/projects.js" defer></script>
-  </head>
-  <body class="bg-primary">
-    <div
-      class="w-full py-2 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5 sm:py-5"
-    >
-      <a
-        href="/index.html"
-        class="font-semibold text-2xl transition ease-in-out duration-500 hover:text-secondary sm:text-4xl"
-        >HOME</a
-      >
-      <a
-        href="/app/pages/projects.html"
-        class="font-semibold text-2xl sm:text-4xl underline decoration-4 hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-        >PROJECTS</a
-      >
-      <a
-        href="/app/pages/about.html"
-        class="font-semibold text-2xl sm:text-4xl hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-        >ABOUT</a
-      >
-      <a
-        href="mailto:dwgcptwork@gmail.com"
-        class="right-5 transition ease-in-out duration-500 hover:scale-110 hover:text-secondary top-4 text-xs sm:top-7 sm:text-sm sm:fixed"
-      >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='icon' href='../images/pfp.ico'>
+  <meta name="theme-color" content="#fafafc">
+  <meta name="description" content="Come chek out my website with all of my projects on">
+  <title>My Personal Website-Projects Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/app/styles.css" />
+  <script src="/app/scripts/projects.js" defer></script>
+</head>
+
+<body class="bg-primary">
+  <main>
+    <header
+      class="py-2 bg-primary text-white text-center select-none space-x-5 sm:py-5 font-semibold text-2xl sm:text-4xl">
+      <a  href = '/index.html'class=" hover:text-secondary  ease-in-out duration-500">HOME</a>
+      <a href="/app/pages/projects.html" class=" hover:text-secondary underline decoration-4 ease-in-out duration-500">PROJECTS</a>
+      <a href="/app/pages/about.html" class=" hover:text-secondary ease-in-out duration-500">ABOUT</a>
+      <a href="mailto:dwgcptwork@gmail.com"
+        class="bg-tersiary text-primary p-2 rounded-md font-bold right-5 ease-in-out duration-500 hover:scale-110  top-4 text-xs sm:top-7 sm:text-sm sm:fixed">
         Contact me
       </a>
-    </div>
-    <div class = 'fixed inline h-5/6 w-full'>
-      <button
-        class="relative block right-0 text-center text-8xl md:right-10 md:text-9xl lg:right-20 opacity-50 font-bold float-right top-40%  text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
-        id="backwardButton"
-        onclick="backward()"
-      >
-        >
-      </button>
-      <button
-        class="text-8xl block left-0 text-center relative md:left-10 md:text-9xl lg:left-20 font-bold float-left opacity-50  top-40% text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
-        id="forwardButton"
-        onclick="forward()"
-      >
-        <
-      </button>
-      <iframe
-      id="display"
-      class="absolute m-auto inline h-full w-4/6 p-8 right-17% bg-center bg-tersiary rounded-3xl transition ease-in-out duration-1000"
-      src="/app/pages/projects/momentum.html"
-    ></iframe>
-    </div>
+    </header>
+    <article>
+      <div class='fixed inline h-5/6 w-full'>
+        <button
+          class="relative block right-0 text-center text-8xl md:right-10 md:text-9xl lg:right-20 opacity-50 font-bold float-right top-40%  text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+          id="backwardButton" onclick="backward()">
+          >
+        </button>
+        <button
+          class="text-8xl block left-0 text-center relative md:left-10 md:text-9xl lg:left-20 font-bold float-left opacity-50  top-40% text-slate-50 transition ease-in-out hover:opacity-100 hover:scale-110 duration-500"
+          id="forwardButton" onclick="forward()">
+          < </button>
+            <iframe id="display"
+              class="absolute m-auto inline h-full w-4/6 p-8 right-17% bg-center bg-tersiary rounded-3xl transition ease-in-out duration-1000"
+              src="/app/pages/projects/momentum.html"></iframe>
+      </div>
+    </article>
+  </main>
+</body>
 
-  </body>
 </html>
