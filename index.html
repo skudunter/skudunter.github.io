@@ -1,87 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/app/scripts/index.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/app/styles.css" />
-    <title>RESUME</title>
-  </head>
-  <body class="bg-primary">
-    <div
-      class="w-full py-2 bg-primary text-slate-50 text-center select-none font-Roboto space-x-5 sm:py-5"
-    >
-      <a
-        class="font-semibold text-2xl underline decoration-4 transition ease-in-out duration-500 hover:text-secondary sm:text-4xl"
-        >HOME</a
-      >
-      <a
-        href="/app/pages/projects.html"
-        class="font-semibold text-2xl sm:text-4xl hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-        >PROJECTS</a
-      >
-      <a
-        href="/app/pages/about.html"
-        class="font-semibold text-2xl sm:text-4xl hover:text-secondary transition ease-in-out duration-500 hover:scale-110"
-        >ABOUT</a
-      >
-      <a
-        href="mailto:dwgcptwork@gmail.com"
-        class="right-5 transition ease-in-out duration-500 hover:scale-110 hover:text-secondary top-4 text-xs sm:top-7 sm:text-sm sm:fixed"
-      >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='icon' href='./app/images/pfp.ico'>
+  <meta name="theme-color" content="#fafafc">
+  <meta name="description" content="Come chek out my website with all of my projects on">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/app/styles.css" />
+  <title>My Personal Project-Portfolio</title>
+  <script type='text/javascript' src="/app/scripts/index.js" defer></script>
+</head>
+
+<body class="bg-primary">
+  <main>
+    <header
+      class="py-2 bg-primary text-white text-center select-none space-x-5 sm:py-5 font-semibold text-2xl sm:text-4xl">
+      <a class=" hover:text-secondary underline decoration-4 ease-in-out duration-500">HOME</a>
+      <a href="/app/pages/projects.html" class=" hover:text-secondary ease-in-out duration-500">PROJECTS</a>
+      <a href="/app/pages/about.html" class=" hover:text-secondary ease-in-out duration-500">ABOUT</a>
+      <a href="mailto:dwgcptwork@gmail.com"
+        class="bg-tersiary text-primary p-2 rounded-md font-bold right-5 ease-in-out duration-500 hover:scale-110  top-4 text-xs sm:top-7 sm:text-sm sm:fixed">
         Contact me
       </a>
-    </div>
-    <span
-      class="fixed justify-center w-full m-auto flex z-10 mt-1 xs:justify-end sm:right-3 sm:bottom-3 select-none"
-    >
-      <a href="/app/pages/coming.html"
-        ><img
-          alt="Discord"
-          class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 hover:scale-125 duration-500 sm:w-16 sm:h-16"
-          src="/app/images/discord.svg"
-      /></a>
-      <a href="/app/pages/coming.html"
-        ><img
-          alt="youtube"
-          class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16"
-          src="/app/images/youtube.svg"
-      /></a>
-      <a href="https://github.com/skudunter"
-        ><img
-          alt="github"
-          class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16"
-          src="/app/images/github.svg"
-      /></a>
-      <a href="https://www.fiverr.com/users/srscoder"
-        ><img
-          alt="fiverr"
-          class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16"
-          src="/app/images/fiverr.png"
-      /></a>
-      <a href="https://skudunter.itch.io/"
-        ><img
-          alt="itch.io"
-          class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16"
-          src="/app/images/itchio-textless-white.svg"
-      /></a>
-    </span>
-    <canvas
-      id="gameCanvas"
-      width="2500"
-      height="1160"
-      class="fixed w-full h-auto"
-    ></canvas>
-  </body>
+    </header>
+    <article>
+      <span class="fixed justify-center w-full m-auto flex z-10 mt-1 xs:justify-end sm:right-3 sm:bottom-3 select-none">
+        <a href="/app/pages/coming.html"><img alt="youtube"
+            class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16"
+            src="/app/images/youtube.svg" /></a>
+        <a href="https://github.com/skudunter"><img alt="github"
+            class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16"
+            src="/app/images/github.svg" /></a>
+        <a href="https://www.fiverr.com/users/srscoder"><img alt="fiverr"
+            class="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16"
+            src="/app/images/fiverr.png" /></a>
+        <a href="https://skudunter.itch.io/"><img alt="itch.io"
+            class="w-8 h-8 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-14 sm:h-14"
+            src="/app/images/itchio-textless-white.svg" /></a>
+      </span>
+      <canvas id="gameCanvas" width="2500" height="1160" class="fixed w-full h-auto"></canvas>
+    </article>
+  </main>
+</body>
+
 </html>
